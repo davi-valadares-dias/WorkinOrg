@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  color: white;
+  line-height: 1.6;
+}
+
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container.admin-layout {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+/* NAVEGAÇÃO */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.9) 0%, rgba(26,26,26,0.8) 100%);
+  border-bottom: 3px solid rgba(255,193,7,0.3);
+  gap: 20px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 0 0 auto;
+}
+
+.user-name {
+  font-size: 0.95em;
+  color: #FFC107;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.menu-cards {
+  display: flex;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 300px;
+}
+
+.menu-card {
+  background: rgba(255,193,7,0.1);
+  color: #FFC107;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  font-weight: 600;
+  border: 1px solid rgba(255,193,7,0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menu-card:hover {
+  background: linear-gradient(135deg, #FFC107 0%, #FFB300 100%);
+  color: #000;
+  border-color: #FFC107;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255,193,7,0.3);
+}
+
+.menu-right {
+  display: flex;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.menu-btn {
+  background: rgba(255,193,7,0.1);
+  color: #aaa;
+  border: 1px solid rgba(255,193,7,0.3);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menu-btn:hover {
+  background: rgba(255,193,7,0.2);
+  color: #FFC107;
+  border-color: #FFC107;
+  transform: scale(1.05);
+}
+
+.menu-btn.logout-btn {
+  background: rgba(244,67,54,0.1);
+  color: #ff9999;
+  border-color: rgba(244,67,54,0.3);
+}
+
+.menu-btn.logout-btn:hover {
+  background: rgba(244,67,54,0.2);
+  color: #ff5252;
+  border-color: #f44336;
+}
+
+/* ADMIN MENU */
+.admin-menu {
+  padding: 20px 25px;
+  border-bottom: 3px solid #FFC107;
+}
+
+/* CONTEÚDO */
+.pagina {
+  flex: 1;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(26,26,26,0.8) 0%, rgba(42,42,42,0.8) 100%);
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.admin-pagina {
+  margin: 0;
+  border-radius: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+/* LOADING */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5em;
+  color: #FFC107;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,193,7,0.5);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,193,7,0.8);
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .menu {
+    flex-wrap: wrap;
+    padding: 12px 15px;
+  }
+
+  .menu-left {
+    width: 100%;
+  }
+
+  .menu-cards {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .pagina {
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .menu-left,
+  .menu-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu-cards {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .menu-card {
+    padding: 8px 12px;
+    font-size: 0.85em;
+    flex: 1;
+    text-align: center;
+  }
+
+  .menu-btn {
+    padding: 8px 12px;
+    font-size: 0.85em;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .pagina {
+    padding: 15px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    padding: 8px;
+  }
+
+  .menu-card,
+  .menu-btn {
+    padding: 6px 10px;
+    font-size: 0.75em;
+  }
+
+  .pagina {
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+  }
+}

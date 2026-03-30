@@ -1,0 +1,23 @@
+.historico-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  color: white;
+}
+
+.historico-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.historico-container li {
+  background: rgba(255,255,255,0.1);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+}

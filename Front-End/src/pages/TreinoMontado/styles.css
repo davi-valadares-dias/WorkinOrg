@@ -1,0 +1,64 @@
+.treino-montado-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  color: white;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+li {
+  background: rgba(255,255,255,0.1);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #FFC107;
+  font-size: 18px;
+  color: white;
+}
+
+li:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+p {
+  text-align: center;
+  color: #ccc;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFC107;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}

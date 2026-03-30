@@ -1,0 +1,44 @@
+.cardio-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  color: white;
+}
+
+.cardio-selection, .cronometro, .calculo {
+  margin: 30px 0;
+}
+
+select, input {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFC107;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.time {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #FFC107;
+}
+
+p {
+  font-size: 18px;
+}

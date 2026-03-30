@@ -1,0 +1,26 @@
+.progresso-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  color: white;
+}
+
+.medidas {
+  margin-bottom: 30px;
+}
+
+.medidas p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.grafico {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 8px;
+}

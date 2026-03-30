@@ -1,0 +1,55 @@
+.treinos-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.main-menu-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-card {
+  background: rgba(255,255,255,0.1);
+  padding: 50px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-card:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-5px);
+}
+
+.main-card h2 {
+  margin-bottom: 15px;
+  color: #FFC107;
+}
+
+.main-card p {
+  font-size: 16px;
+  color: #ccc;
+}
+    color: #ddd;
+    margin-bottom: 20px;
+}

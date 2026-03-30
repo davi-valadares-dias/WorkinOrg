@@ -1,0 +1,38 @@
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.perfil-card {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 400px;
+  color: white;
+}
+
+.foto {
+  margin-bottom: 20px;
+}
+
+.foto img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #FFC107;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #FFC107;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}

@@ -1,0 +1,55 @@
+.meus-treinos-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.treinos-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.treino-card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.treino-card:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.treino-card h2 {
+  margin-bottom: 15px;
+  color: #FFC107;
+}
+
+.treino-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.treino-card li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+p {
+  color: #ccc;
+}
